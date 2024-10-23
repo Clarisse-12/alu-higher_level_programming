@@ -1,3 +1,2 @@
 #!/usr/bin/python3
-for i in range(99):
-    print("{:d} = {:x}".format(i, i))
+print("{}".format("".join("{:d} = {:x}, ".format(i, i) for i in range(99))[:-2]), end="")
