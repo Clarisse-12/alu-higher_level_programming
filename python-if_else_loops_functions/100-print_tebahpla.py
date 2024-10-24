@@ -6,4 +6,3 @@ def print_alphabet():
             end=""
         )
 print_alphabet()
-
