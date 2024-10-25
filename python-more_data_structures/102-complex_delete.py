@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def complex_delete(a_dictionary, value):
-    keys_to_delete = [key for key in a_dictionary if a_dictionary[key] == value]
-    for key in keys_to_delete:
-        del a_dictionary[key]
+def print_sorted_dictionary(a_dictionary):
+    if a_dictionary is not None:
+        for key in sorted(a_dictionary.keys()):
+            print(f"{key}: {a_dictionary[key]}")
