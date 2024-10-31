@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 def raise_exception_msg(message=""):
-    raise typeerror("there is any error.")
+    raise nameError("there is any error.")
