@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-this fdefine Private instance attribute
+this define Private instance attribute
 """
 
 
@@ -10,7 +10,7 @@ class Node:
         """
     def __init__(self, data, next_node=None):
         """
-       initialise node  of a singly linked list
+       initialise new node  in a singly linked list
         """
         self.data = data
         self.next_node = next_node
