@@ -5,9 +5,12 @@ this fdefine Private instance attribute
 
 
 class Node:
+    """
+        Defines a node of a singly linked list
+        """
     def __init__(self, data, next_node=None):
         """
-        Defines a node of a singly linked list
+       initialise node  of a singly linked list
         """
         self.data = data
         self.next_node = next_node
