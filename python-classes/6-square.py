@@ -1,23 +1,36 @@
 #!/usr/bin/python3
+"""
+this is define square class with public instance attribute
+"""
 class Square:
-    """Defines a square"""
+    """
+    Defines a square
+    """
     def __init__(self, size=0, position=(0, 0)):
-        """Initialises the data"""
+        """
+        Initialises the data
+        """
         self.size = size
         self.position = position
 
     def area(self):
-        """Returns current square area"""
+        """
+        Returns current square area
+        """
         return self.__size**2
 
     @property
     def size(self):
-        """Getter method"""
+        """
+        Getter method
+        """
         return self.__size
 
     @size.setter
     def size(self, value):
-        """Setter method"""
+        """
+        Setter method
+        """
         self.__size = value
         if type(value) != int:
             raise TypeError("size must be an integer")
@@ -25,7 +38,9 @@ class Square:
             raise ValueError("size must be >= 0")
 
     def my_print(self):
-        """Prints the square"""
+        """
+        Prints the square
+        """
         if self.__size == 0:
             print()
         else:
@@ -40,7 +55,9 @@ class Square:
 
     @property
     def position(self):
-        """Getter method"""
+        """
+        Getter method
+        """
         return self.__position
 
     @position.setter
