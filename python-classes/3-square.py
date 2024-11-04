@@ -2,7 +2,8 @@
 """
 This module defines a Square class with a private instance attribute for size.
 The Square class represents a square shape with a specified size attribute.
-The size is validated to be a non-negative integer, and an area method is provided.
+The size is validated to be a non-negative integer, and an area method
+is provided.
 """
 
 
