@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-that defines a node of a singly linked list
+Private instance attribute
 """
 
 
