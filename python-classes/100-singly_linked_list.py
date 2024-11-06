@@ -8,46 +8,62 @@ argument. Also checks if the size arg has a valid value.
 
 
 class Node():
-    """Node Class."""
+    """
+    Node Class.
+    """
 
     def __init__(self, data, next_node=None):
-        """Initialization of Node Class"""
+        """
+        Initialization of Node Class
+        """
         self.data = data
         self.next_node = next_node
 
     @property
     def data(self):
-        """Data"""
+        """
+        Data
+        """
         return self.__data
 
     @data.setter
     def data(self, DataValue):
-        """Set data"""
+        """
+        Set data
+        """
         if type(DataValue) != int:
             raise TypeError("data must be an integer")
         self.__data = DataValue
 
     @property
     def next_node(self):
-        """Node"""
+        """
+        Node
+        """
         return self.__next_node
 
     @next_node.setter
     def next_node(self, NodeValue):
-        """set Node"""
+        """
+        set Node
+        """
         if NodeValue is not None and not isinstance(NodeValue, Node):
             raise TypeError("next_node must be a Node object")
         self.__next_node = NodeValue
 
 
 class SinglyLinkedList():
-    """Class SinglyLinkedList"""
+    """
+    Class SinglyLinkedList
+    """
     def __init__(self):
         """Initialization of SinglyLinkedList"""
         self.__head = None
 
     def sorted_insert(self, DataValue):
-        """Inserts a nodes"""
+        """
+        Inserts a nodes
+        """
         NewNode = Node(DataValue)
         if self.__head is None:
             self.__head = NewNode
@@ -68,7 +84,9 @@ class SinglyLinkedList():
         NewNode.next_node = actual
 
     def __str__(self):
-        """Class As a String"""
+        """
+        Class As a String
+        """
         strg = ""
         actual = self.__head
         while actual:
