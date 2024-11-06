@@ -6,8 +6,8 @@ this define Private instance attribute
 
 class Node:
     """
-        Defines a node of a singly linked list
-        """
+    Defines a node of a singly linked list
+    """
     def __init__(self, data, next_node=None):
         """
        initialise new node  
