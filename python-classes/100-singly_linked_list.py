@@ -1,48 +1,30 @@
 #!/usr/bin/python3
-"""
-this define Private instance attribute
-"""
-
-
 class Node:
-    """
-    Defines a node of a singly linked list
-    """
     def __init__(self, data, next_node=None):
-        """
-       initialise new node  
-        """
+        """Defines a node of a singly linked list"""
         self.data = data
         self.next_node = next_node
 
     @property
     def data(self):
-        """
-        data getter
-        """
+        """data getter"""
         return self.__data
 
     @data.setter
     def data(self, value):
-        """
-        data setter
-        """
+        """data setter"""
         if type(value) != int:
             raise TypeError("data must be an integer")
         self.__data = value
 
     @property
     def next_node(self):
-        """
-        next_node getter
-        """
+        """next_node getter"""
         return self.__next_node
 
     @next_node.setter
     def next_node(self, value):
-        """
-        next_node setter
-        """
+        """next_node setter"""
         if value is not None and type(value) is not Node:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
@@ -50,9 +32,7 @@ class Node:
 
 class SinglyLinkedList:
     def __init__(self):
-        """
-        Defines a singly linked list
-        """
+        """Defines a singly linked list"""
         self.__head = None
 
     def sorted_insert(self, value):
@@ -78,9 +58,6 @@ class SinglyLinkedList:
             new.data = value
 
     def __str__(self):
-        """
-        define str
-        """
         s = ""
         current = self.__head
 
