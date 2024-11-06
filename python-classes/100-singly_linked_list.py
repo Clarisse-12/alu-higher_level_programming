@@ -10,7 +10,7 @@ class Node:
         """
     def __init__(self, data, next_node=None):
         """
-       initialise new node  in a singly linked list
+       initialise new node  
         """
         self.data = data
         self.next_node = next_node
@@ -78,6 +78,9 @@ class SinglyLinkedList:
             new.data = value
 
     def __str__(self):
+        """
+        define str
+        """
         s = ""
         current = self.__head
 
