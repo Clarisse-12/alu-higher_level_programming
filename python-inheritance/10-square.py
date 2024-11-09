@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-"""Square class Module"""
+"""
+Square class Module
+"""
+
+
 Rectangle = __import__("9-rectangle").Rectangle
 
 
