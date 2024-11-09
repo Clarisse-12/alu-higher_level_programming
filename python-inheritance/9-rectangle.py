@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-The Rectangle class module of BaseGeometry in rectangle method by width and height.
+The module define  Rectangle class  of BaseGeometry in rectangle method by width and height.
 """
 
 
