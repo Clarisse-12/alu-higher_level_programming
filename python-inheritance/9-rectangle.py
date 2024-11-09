@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Rectangle class module.
+Rectangle class module of basegeometry in rectangle method.
 """
 
 BaseGeometry = __import__("7-base_geometry").BaseGeometry
