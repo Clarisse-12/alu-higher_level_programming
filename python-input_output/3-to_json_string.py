@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""Defines a text file-reading function."""
+"""Defines a string-to-JSON function."""
+import json
 
 
-def read_file(filename=""):
-    """Print the contents of a UTF8 text file to stdout."""
-    with open(filename, encoding="utf-8") as f:
-        print(f.read(), end="")
+def to_json_string(my_obj):
+    """Return the JSON representation of a string object."""
+    return json.dumps(my_obj)
