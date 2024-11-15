@@ -1,3 +1,3 @@
--- Script that lists all privileges of the MySql
-SHOW GRANTS FOR 'user_0d_1'@'localhost';
-SHOW GRANTS FOR 'user_0d_2'@'localhost';
+REVOKE SELECT, INSERT, UPDATE ON *.* FROM 'user_0d_1'@'localhost';
+REVOKE CREATE, DROP ON db1.* FROM 'user_0d_1'@'localhost';
+
