@@ -1,9 +1,16 @@
 #!/usr/bin/python3
-"""fetches https://intranet.hbtn.io/status"""
+"""  fetches https://alu-intranet.hbtn.io/status  """
 import urllib.request
 
-if __name__ == '__main__':
-    with urllib.request.urlopen("https://intranet.hbtn.io/status") as response:
-        html = response.read()
-        print("Body response:\n\t- type: {}\n\t- content: {}\n\t-".format(
-              type(html), html), "utf8 content:", html.decode("utf-8"))
+url = 'https://intranet.hbtn.io/status'
+if url.startswith('https://'):
+    url = "https://alu-intranet.hbtn.io/status"
+
+if __name__ == "__main__":
+    req = urllib.request.Request(url)
+    with urllib.request.urlopen(req) as response:
+        content = response.read()
+        print("Body response:")
+        print("\t- type:", type(content))
+        print("\t- content:", content)
+        print("\t- utf8 content:", content.decode("utf-8"))
