@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Lists all City objects from the database hbtn_0e_101_usa
+thi module define the all list  from the database hbtn_0e_101_usa
 """
 
 
