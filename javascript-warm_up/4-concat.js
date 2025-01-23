@@ -1,5 +1,5 @@
 #!/usr/bin/node
 
-const [, , firstArg = "", secondArg = ""] = process.argv;
+const [, , firstArg = "undefined", secondArg = "undefined"] = process.argv;
 console.log(`${firstArg} is ${secondArg}`);
 
