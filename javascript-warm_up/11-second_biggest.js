@@ -1,15 +1,9 @@
 #!/usr/bin/node
-function factorial (n) {
-  if (n <= 1) {
-    return 1;
-  }
-  return n * factorial(n - 1);
-}
+const args = process.argv.slice(2).map(Number);
 
-const arg = parseInt(process.argv[2], 10);
-
-if (isNaN(arg)) {
-  console.log(1);
+if (args.length <= 1) {
+  console.log(0);
 } else {
-  console.log(factorial(arg));
+  const sortedArgs = args.sort((a, b) => b - a);
+  console.log(sortedArgs[1]);
 }
