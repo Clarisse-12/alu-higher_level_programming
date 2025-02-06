@@ -1,1 +1,1 @@
-document.queryselectop('header').style.colr = '#FF0000';
+document.queryselectop('header').style.color = '#FF0000';
